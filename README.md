@@ -8,7 +8,7 @@
 ### Cocoapods
 
 ```
-pod `MKUserLocation-Mocking`, :git => 'https://github.com/basvankuijck/MKUserLocation-Mocking.git', :configuration => "Debug"
+pod 'MKUserLocation-Mocking', :git => 'https://github.com/basvankuijck/MKUserLocation-Mocking.git', :configuration => 'Debug'
 ```
 
 ### Implementation

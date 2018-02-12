@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "MKUserLocationMocking"
+  s.name         = "MKUserLocation-Mocking"
   s.version      = "0.0.1"
   s.summary      = "An easy way to mock your MKUserLocation."
   s.description  = "Ever found yourself struggling with mocking a userlocation when running UI tests or fastlane snapshot?"
