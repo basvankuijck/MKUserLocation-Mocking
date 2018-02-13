@@ -7,7 +7,7 @@
 
 ### Cocoapods
 
-```
+```ruby
 pod 'MKUserLocation-Mocking', :git => 'https://github.com/basvankuijck/MKUserLocation-Mocking.git', :configuration => 'Debug'
 ```
 
@@ -15,7 +15,7 @@ pod 'MKUserLocation-Mocking', :git => 'https://github.com/basvankuijck/MKUserLoc
 
 #### Swift
 
-```
+```swift
 // MKMapView Controller
 
 override func viewDidLoad() {
@@ -26,9 +26,17 @@ override func viewDidLoad() {
 }
 ```
 
+Add this to your `Bridging-Header.h`:
+
+```obj-c
+#ifdef DEBUG
+    #import <MKUserLocation_Mocking/MKMapView+Mocking.h>
+#endif
+```
+
 #### Objective-c
 
-```
+```obj-c
 // MKMapView Controller
 
 - (void)viewDidLoad {
